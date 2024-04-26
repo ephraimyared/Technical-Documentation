@@ -1,0 +1,61 @@
+ body{
+    min-width: 180px;
+    line-height: 1.5;
+    font-family: sans-serif,Arial, Helvetica;
+    background-color: antiquewhite;
+    color: black;
+   
+   
+}
+#navbar{
+   width: 300px;
+   position: fixed;
+   min-width: 280px;
+   height: 100%;
+   line-height: 2.5;
+   left:0px;
+   border-right: solid;
+   font-size: x-large;
+   overflow: scroll;
+   margin: 0;
+   border-color: rgb(131, 129, 129);
+
+}
+nav li{
+    border-bottom: solid 2px black;
+    position: relative;
+    list-style-type: none;
+    color: white;
+
+}
+#main-doc{
+    position: absolute;
+    left:320px;
+    min-width: 200px;
+
+}
+header{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+code{
+    background-color: rgb(233, 224, 224);
+    display: block;
+    font-size: large;
+    border-radius: 4px;
+    padding: auto;
+}
+#navbar a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+section li{
+    margin: 15px;
+}
+@media screen and (max-width: 600px) {
+ body{
+        font-size: 14px;
+    }
+}

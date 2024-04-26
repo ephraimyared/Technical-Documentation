@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical-Documentation</title>
+    <link rel="stylesheet" href="Technical documentation styles.css">
+</head>
+<body>
+    <main id="main-doc"> 
+       <nav id="navbar">
+        <header>TypeScript</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Variables_and_Types">Variables and Types</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Arrow_functions">Arrow functions</a></li>
+            <li><a class="nav-link" href="#Loops">Loops</a></li>
+            <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Truthy_and_Falsy">Truthy and Falsy</a></li>
+            <li><a class="nav-link" href="#Inheritance">Inheritance</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+       </nav>   
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>TypeScript is a strict syntactical superset of JavaScript, adding optional static typing. Developed and maintained by Microsoft, it allows developers to use the latest ECMAScript features and 
+                    compile the code to plain JavaScript, which can be run in any browser or Node.js environment.</p>
+                   <p>TypeScript is a syntactic superset of JavaScript which adds static typing. This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types.
+                     TypeScript being a "Syntactic Superset" means that it shares the same base syntax as JavaScript, but adds something to it.</p>
+                     <ul>
+                        <li>Let's start with the most basic program: "Hello World". In TypeScript, just like JavaScript, this can be done with a simple console.log() statement.
+                           <br><br><code>
+                            const message: string = "Hello World";
+                            console.log(message);</code><br><br>The : string is a type annotation that tells TypeScript that the message variable can only hold a string. 
+                            This is one of the many features TypeScript adds to JavaScript.</li><br>
+                            <li>TypeScript also supports formatting strings using the backtick operator. Here is an example:<br><br>
+                              <code> const name = "John";
+                                const message: string = `Hello ${name}`;
+                                console.log(message);</code> <br><br>This prints "Hello John", because the name variable was formatted into the string right after the word Hello.</li>
+                     </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Variables_and_Types">
+            <header>Variables and Types</header>
+            <article>
+                <p>In TypeScript, variables are containers for storing data values. TypeScript enhances variables with type annotations,
+                     allowing you to enforce the type of data your variables can hold. This helps in catching type-related errors early in the development process,
+                      making your code more robust and maintainable. There are several basic types in TypeScript, including:</p>
+                      <ul>
+                        <li>number: For numeric values.</li>
+                        <li>string: For textual data.</li>
+                        <li>boolean: For true/false values.</li>
+                        <li>any: A wildcard type that can be anything.</li>
+                        <li>arrays: For collections of values, denoted by Type[] or Array<Type>.</li>
+                      </ul>
+                      <p>Defining a variable is done in TypeScript can be done either using a type or omitting it. 
+                        If omitted, the interpreter will set the type according to the type of variable it was defined with.</p>
+                        <p>When declaring variables, TypeScript uses let and const keywords from modern JavaScript:</p>
+                        <ul>
+                            <li>let: Declares a block-scoped variable, optionally initializing it to a value. let variables can be reassigned.</li>
+                            <li>const: Declares a block-scoped constant. Once assigned, const variables cannot be reassigned.</li>
+                        </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>Functions in TypeScript can have typed parameters and return values.
+                      <br>
+                    In the following example, the function add receives two numbers and returns a number. The function defines the types of the parameters and its return value using the : operator.</p>
+                    <code>function add(a: number, b: number): number {
+                        return a + b;
+                    }</code>
+            </article>
+        </section>
+        <section class="main-section" id="Arrow_functions">
+            <header>Arrow functions</header>
+            <article>
+                <p>Arrow functions in TypeScript differ from regular functions when used in objects
+                     they do not manipulate the this value and use the same scope as the parent function.
+                      However this trait should not conern you if you are not using objects in TypeScript.</p>
+                      <p>Arrow functions also support a shorter form - if the function is an expression and not a code block denoted using curly braces,
+                         it will return that expression as the output of the function.</p>
+                         <p>
+                            For example: </p>
+                             <code> const add = (a: number, b: number): number => a + b;</code>      
+            </article>
+        </section>
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+            <article>     
+                <p>Looping is a foundational concept in programming, allowing for repeated execution of a block of code. TypeScript, building upon JavaScript, offers a variety of loop constructs to handle different scenarios.
+                     This tutorial will delve into the primary loop mechanisms in TypeScript, discussing their syntax and use cases.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Arrays">
+             <header>Arrays</header> 
+           <article>
+                <p>Arrays serve as one of the primary data structures in TypeScript and JavaScript. 
+                    In TypeScript, they offer the added advantage of type safety, ensuring that once an array is defined to hold a particular type of data, it will always maintain that type.</p>
+                    <p>Arrays can be defined in TypeScript using either the array type syntax or the generic array type:<br>
+                        let names: string[] = ["Alice", "Bob", "Charlie"];<br>
+                        let ids: Array<number> = [101, 102, 103];</p>
+                            <p>Arrays offer several methods to add or remove items:</p>
+                            <ol>
+                                <li> push(): Adds one or more elements to the end of an array.</li>
+                                <li>unshift(): Inserts one or more elements at the beginning.</li>
+                                <li>pop(): Removes the last element.</li>
+                                <li>shift(): Removes the first element.</li>
+                            </ol>
+            </article>
+        </section>
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <article> 
+                <p>Operators in TypeScript are fundamental elements that allow you to perform various operations on your data.
+                     This can range from simple arithmetic calculations to more complex logical evaluations and comparisons.
+                      Understanding these operators is essential to writing robust and efficient TypeScript code.</p>
+                      <p>Operators are vital tools in TypeScript that enable various operations.
+                         They offer great flexibility in processing and evaluating data, making your coding experience efficient and expressive. 
+                        Familiarizing yourself with these operators will significantly boost your TypeScript proficiency</p>
+            </article>
+        </section>
+        <section class="main-section" id="Truthy_and_Falsy">
+                <header>Truthy and Falsy</header> 
+            <article>
+                <p>TypeScript considers some values as "falsy". When evaluated inside a boolean expression,
+                     they will act as false. Here are a few examples of falsy variables in TypeScript:</p>
+                     <ul>
+                        <li>false</li>
+                        <li>0</li>
+                        <li>NaN (the "not a number" value)</li>
+                        <li>"" (empty string)</li>
+                        <li>[] (empty array)/li>
+                        <li>null</li>
+                        <li>undefined</li>
+                     </ul>
+                     <p>All other values will be considered "truthy", meaning that when evaluated as a boolean expression, they will act as true.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Inheritance">
+              <header>Inheritance</header> 
+           <article>
+                <p>TypeScript supports inheritance, allowing a new class (known as a subclass) to derive from an existing class (superclass).
+                     The extends keyword facilitates this.</p>
+                     <p>When a subclass extends a superclass, it inherits all properties and methods. However, it can also:</p>
+                     <ol>
+                        <li>Add new properties or methods.</li>
+                        <li>Override existing methods.</li>
+                     </ol>
+                     <p>Example:</p>
+                     <code>class Animal {
+                        name: string;
+                        constructor(name: string) {
+                            this.name = name;</code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+         <header>Reference</header>
+         <article>
+         <ul>
+            <li>This referemce is taken from <a href="https://www.learn-ts.org/">TypeScript.</a></li>
+         </ul>
+        </article>
+        </section>
+    </main>
+</body>
+</html>
